@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "sourceMap": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "paths": {
+      "@/*": ["*"],
+      "@prisma/__generated__": ["prisma/__generated__/index.d.js"],
+      "@prisma/__generated__/*": ["prisma/__generated__/*"]
+      // "@prisma/__generated__/*": ["prisma/__generated__/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "jsx": "react"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
